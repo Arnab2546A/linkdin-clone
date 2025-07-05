@@ -8,9 +8,8 @@ import { BiRepost } from "react-icons/bi";
 import { RiSendPlaneFill } from "react-icons/ri";
 import PostModal from './PostModal';
 import { connect } from 'react-redux';
-import { postArticleAPI } from '../actions';
 import { BiSolidLike } from "react-icons/bi";
-import { getSupabasePosts, deleteSupabasePost, toggleLikePost } from '../api/supabasePosts'; // <-- import this
+import { getSupabasePosts, deleteSupabasePost, toggleLikePost } from '../api/supabasePosts';
 
 const Main = (props) => {
     const [showModal, setShowModal] = useState("close");
