@@ -4,7 +4,7 @@ import Header from './Header'
 import styled from 'styled-components'
 import Leftside from './Leftside'
 import Main from './Main'
-import Rightside from './RightSide'
+import Rightside from './Rightside'
 import {connect} from 'react-redux'
 const Home = (props) => {
   const navigate = useNavigate();
