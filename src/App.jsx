@@ -30,7 +30,7 @@ function App(props) {
           <Route path="/" element={props.user ? <Navigate to="/home" /> : <Login />} />
           <Route 
             path="/home" 
-            element={props.user ? <Home /> : <Navigate to="/" replace />} 
+            element={props.user ? <Home /> : <Login />} 
           />
           {/* Add a catch-all route to handle 404s */}
           <Route path="*" element={<Navigate to="/" replace />} />
