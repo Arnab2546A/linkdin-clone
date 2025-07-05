@@ -5,6 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="/images/linkedin.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linkedin Clone</title>
+    <script>
+  // Handle direct navigation to protected routes when not authenticated
+  (function() {
+    const path = window.location.pathname;
+    const protectedRoutes = ['/home'];
+    
+    // Check if this is a protected route and no auth token exists
+    if (protectedRoutes.includes(path) && !localStorage.getItem('user')) {
+      window.location.href = '/';
+    }
+  })();
+</script>
   </head>
   <body>
     <div id="root"></div>
